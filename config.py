@@ -65,7 +65,7 @@ class Config:
         self.deepseek_base_url = os.getenv('DEEPSEEK_BASE_URL', 'https://api.deepseek.com')
         
         # Application Settings
-        self.default_llm_provider = os.getenv('DEFAULT_LLM_PROVIDER', 'ollama').lower()
+        self.default_llm_provider = os.getenv('DEFAULT_LLM_PROVIDER', 'deepseek').lower()
         self.log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
         self.api_host = os.getenv('API_HOST', '0.0.0.0')
         self.api_port = int(os.getenv('API_PORT', '8000'))

@@ -3,3 +3,4 @@
 .env
 backup/*
 test_*
+__pycache__/*
