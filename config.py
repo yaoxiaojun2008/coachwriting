@@ -67,7 +67,7 @@ class Config:
         # Application Settings
         self.default_llm_provider = os.getenv('DEFAULT_LLM_PROVIDER', 'ollama').lower()
         self.log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
-        self.api_host = os.getenv('API_HOST', '127.0.0.1')
+        self.api_host = os.getenv('API_HOST', '0.0.0.0')
         self.api_port = int(os.getenv('API_PORT', '8000'))
         
         # OCR Settings
