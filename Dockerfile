@@ -6,7 +6,8 @@ WORKDIR /app
 
 
 RUN python -m venv .venv
-RUN .venv/bin/pip install "fastapi[standard]"
+COPY requirements.txt .
+RUN .venv/bin/pip install --upgrade pip
 RUN .venv/bin/pip install -r requirements.txt
 FROM python:3.12.12-slim
 WORKDIR /app
