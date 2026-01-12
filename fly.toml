@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for coachwriting on 2026-01-12T19:42:59Z
+# fly.toml app configuration file generated for coachwriting on 2026-01-12T20:51:41Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -7,9 +7,9 @@ app = 'coachwriting'
 primary_region = 'iad'
 
 [build]
-  NEXT_PUBLIC_API_URL = "https://coachwriting.fly.dev"
+
 [http_service]
-  internal_port = 8000
+  internal_port = 8080
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
