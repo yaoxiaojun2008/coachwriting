@@ -7,7 +7,7 @@ app = 'coachwriting'
 primary_region = 'iad'
 
 [build]
-
+  NEXT_PUBLIC_API_URL = "https://coachwriting.fly.dev"
 [http_service]
   internal_port = 8000
   force_https = true
